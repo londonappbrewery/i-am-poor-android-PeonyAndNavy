@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CADEE6"
+    android:background="@color/colorPrimary"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -12,21 +12,38 @@
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_i_am"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="27dp"
+        android:layout_toStartOf="@+id/text_rock"
         android:text="@string/app_name"
-        android:textColor="#8A6262"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="60sp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_coal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_centerVertical="true"
         app:srcCompat="@drawable/coal" />
+
+    <TextView
+        android:id="@+id/text_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/image_coal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="22dp"
+        android:text="Rocky."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60sp"
+        android:textStyle="bold" />
 </RelativeLayout>
